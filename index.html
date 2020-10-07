@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <h1 id="banner">My To-Do List</h1>
+    <header id="background">
+    </header>
+    <main>
+
+        <form id="form">
+            <label for="todo">To-do List:</label>
+            <input type="text" name="todo" id="todo">
+            <input type="submit" value="Write on the list">
+        </form>
+        <button id="clearList">Clear To-do List</button>
+
+        <section id="to-do-whiteboard">
+            <ul id="whiteboard-list">
+
+            </ul>
+        </section>
+
+        <form id="imageForm">
+            <label for="forest">Search for pictures...
+                <input type="text" name="forestSearch" id="imageSearch" placeholder="Forest">
+            </label>
+            <input type="submit" value="Search">
+            <br>
+            <h3>Color Filter</h3>
+            <input type="radio" name="color" id="black_and_white" value="black_and_white" autocomplete="off">
+            <label for="black_and_white">Black and White</label>
+
+            <input type="radio" name="color" id="yellow" value="yellow" autocomplete="off">
+            <label for="yellow">Yellow</label>
+
+            <input type="radio" name="color" id="red" value="red" autocomplete="off">
+            <label for="red">Red</label>
+
+            <input type="radio" name="color" id="green" value="green" autocomplete="off">
+            <label for="green">Green</label>
+
+            <input type="radio" name="color" id="blue" value="blue" autocomplete="off">
+            <label for="blue">Blue</label>
+
+        </form>
+
+        <section id="searchResults">
+        </section>
+        <button id="deleteImages">Delete Images</button>
+
+    </main>
+    <script src="./assets/app.js"></script>
+</body>
+
+</html>
